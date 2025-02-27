@@ -1,0 +1,167 @@
+/* General Styles */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+/* Particles.js Container */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    z-index: -1;
+}
+
+/* Navigation Bar */
+.navbar-custom {
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+    padding: 15px 20px;
+}
+
+.navbar-custom.scrolled {
+    background: rgba(0, 166, 90, 0.9);
+    padding: 10px 20px;
+}
+
+.navbar-brand {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.navbar-nav li a {
+    color: white;
+    font-weight: 600;
+    padding: 12px 20px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav li a:hover {
+    color: #00ffcc;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+/* Page Titles */
+.page-title {
+    font-size: 3rem;
+    margin-top: 100px; /* Fix navbar overlapping */
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    position: relative;
+    z-index: 1;
+}
+
+/* Book Cards */
+.book-card {
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: none;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 255, 204, 0.4);
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.book-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.book-author {
+    font-size: 1.2rem;
+    color: #00ffcc;
+    margin-bottom: 10px;
+}
+
+/* Recommendation Form */
+.recommendation-form {
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+    z-index: 1;
+}
+
+.search-box {
+    background: rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.search-box:focus {
+    border-color: #00ffcc;
+    outline: none;
+}
+
+.btn-recommend {
+    background: #00ffcc;
+    color: black;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.btn-recommend:hover {
+    background: #00a68e;
+    transform: translateY(-2px);
+}
+
+/* Cursor Animation */
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00ffcc;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease, width 0.2s ease, height 0.2s ease;
+    z-index: 1000;
+}
+
+.cursor.hover {
+    width: 40px;
+    height: 40px;
+    background-color: rgba(0, 255, 204, 0.3);
+}
